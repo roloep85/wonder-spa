@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html ng-app="landing" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wonder Spa (Pty) Ltd.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <header>
+                <img src="img/Header.jpg" alt="">
+            </header>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand" href="index.html">
+                                Home
+                            </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="information.html">Information</a></li>
+                            <li><a href="testimonial.html">Testimonial</a></li>
+							<li><a href="ozone.html">Ozone</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!--
+
+<div class="jumbotron">
+<p>The 'Wonder Spa' coverts your own bath, into a hydro-ozone health spa in minutes.</p>
+</div>
+-->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/slides/Slider3.jpg" alt="">
+
+                        <!--
+<div class="carousel-caption">
+<h3>Converts your own bath into a hydro-ozone health spa in minutes</h3>
+<button class="btn btn-primary btn-sm"><a href="products.html">Read More</a></button>
+</div>
+-->
+
+                    </div>
+                    <div class="item">
+                        <img src="img/slides/Slider4.jpg" alt="...">
+
+                        <!--
+<div class="carousel-caption">
+<h3>Invigorates all your senses and leaves you refreshed</h3>
+<button class="btn btn-primary btn-sm"><a href="information.html">Read More</a></button>
+</div>
+-->
+
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slides/Slider5.jpg" alt="...">
+                        <!--
+<div class="carousel-caption">
+
+</div>
+-->
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+            <div class="content">
+
+                <section class="row">
+                    <div class="col-md-12">
+                        <h1>Welcome to Wonderspa</h1>
+                        <p>The 'Wonder Spa' coverts your own bath, into a hydro-ozone health spa in minutes. With Wonder Spa it is now possible to treat yourself in the comfort of your own home while relaxing in your bath! Could any treatment be easier and more pleasurable than this?</p>
+                    </div>
+                </section>
+                <section ng-controller="showcase" class="row">
+                    <div class="feature">
+                        <div class="col-md-3 col-sm-6" ng-repeat="feature in features">
+                            <div class="panel panel-primary">
+                                <div class="panel-body text-center">
+                                    <img src="" ng-src="{{ feature.img }} " alt="">
+                                    <h3>{{ feature.heading }}</h3>
+                                    <div class="spacer-1"></div>
+                                    <p>{{ feature.description }}</p>
+
+                                    <a ng-href="{{ feature.link }}" class="btn btn-primary">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <footer>
+                <div class="main-footer">
+                    <small>
+                            <b>Telephone:</b> 016 981 3978&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<b>Fax:</b> 086 551 5934&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<b>Email:</b> corrie@wonderspa.co.za
+                        </small>
+                </div>
+                <div class="sub-footer">
+                    <small id="currentCopy">
+                            Wonder Spa (Pty) Ltd &copy; <span></span>
+                        </small>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
