@@ -5,7 +5,7 @@ app.controller('showcase', function ($scope) {
             heading: 'Experienced',
             img: 'img/feature/button44.png',
             link: 'about.html',
-            description: 'We have been in business for more than two decades, and we know all about spa therapy made easy.'
+            description: 'We have been in business for more than 20 years, and we know all about spa therapy made easy.'
         },
         {
             heading: 'Plug & Play',
